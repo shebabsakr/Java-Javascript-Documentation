@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='styles.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Js & Java</title>
+  </head>
+  <body>
+    <header class='mobile-header'>JS Documation</header>
+    <div class='nav'>
+      <nav id='navbar'>
+        <header class='dont-show'>JS Documation</header>
+        <ul>
+          <li class='title'>JS Documation</li>
+          <li><a href="#Inroduction">Introduction</a></li>
+          <li><a href="#What_You_Should_Know">What You Need To Know</a></li>
+          <li><a href="#Overview_On_JS">Overview On The Topic</a></li>
+          <li><a href="#Your_First_Scripts!">First Scripts</a></li>
+          <li><a href="#Variables">Variables</a></li>
+          <li><a href="#If_&_Elif_&_Else">If & Elif & Else</a></li>
+          <li><a href="#Basic_Data_Types">Basic Data Types</a></li>
+          <li><a href="#Data_Structures">Data Structures</a></li>
+          <li><a href="#While_Statements">While Statements</a></li>
+          <li><a href="#Unit_Testing">Unit Testing</a></li>
+          <li><a href="#Scope">Scope</a></li>
+          <li><a href="#Project_Ideas">Project Ideas</a></li>
+          <li class="space"></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main id='main-doc'>
+      <section class='main-section' id='Inroduction' aria-labelledby="intro">
+        <header>Inroduction</header>
+        <p>JavaScript (JS) is a powerful, high-level programming language widely used for creating dynamic and interactive web experiences. It works alongside HTML and CSS to form the foundation of modern web development. Originally designed for client-side scripting, JavaScript enables developers to build responsive and interactive user interfaces that react instantly to user input without reloading the page.<br><br>Over time, JavaScript has evolved far beyond the browser. With the introduction of Node.js, it is now also used for server-side programming, allowing developers to build complete, scalable web applications using a single language across the entire technology stack. Its large ecosystem of frameworks and libraries, such as React, Angular, and Vue.js, has made it one of the most popular and versatile languages in the world.</p>
+        <ul>
+          <li>Enables interactive, dynamic, and real-time functionality on websites.</li>
+          <li>Supports both client-side and server-side development for full-stack applications.</li>
+        </ul>
+      </section>
+
+      <section class='main-section' id='What_You_Should_Know'>
+        <header>What You Should Know</header>
+        <p>Before learning JavaScript, it helps to have a basic understanding of how the web works and some familiarity with other front-end technologies. Knowing HTML and CSS will make it easier to understand how JavaScript interacts with webpage elements and enhances user experiences. You should also be comfortable using a web browser’s developer tools to inspect elements, test code, and debug scripts.<br><br>Additionally, understanding fundamental programming concepts—such as variables, data types, loops, and functions—will provide a solid foundation for writing efficient JavaScript code. As you progress, you will encounter advanced topics like asynchronous programming, APIs, and frameworks that extend JavaScript’s capabilities across different platforms.</p>
+      </section>
+
+      <section class='main-section' id='Overview_On_JS'>
+        <header>Overview On JS</header>
+        <p>JavaScript (JS) is a versatile, high-level programming language that powers the interactive and dynamic behavior of modern websites. It works alongside HTML and CSS to create responsive, user-friendly web applications. Unlike static pages, JavaScript allows developers to manipulate webpage content in real time, handle user events, and communicate with servers without reloading the page.<br><br>Originally designed for client-side scripting, JavaScript has expanded its reach through environments like Node.js, enabling developers to build server-side and full-stack applications using the same language. Its extensive ecosystem includes popular libraries and frameworks such as React, Angular, and Vue.js, which streamline the creation of complex web interfaces.<br><br>Due to its flexibility, large community, and continuous evolution, JavaScript remains one of the most essential and widely used programming languages in web development today.</b></p>
+      </section>
+
+      <section class='main-section' id='Your_First_Scripts!'>
+        <header>Your First Scripts!</header>
+        <p>JavaScript can be embedded directly into an HTML file to make web pages interactive. Your first script usually involves displaying a message or interacting with the user through the browser console or pop-up dialogs. In the example below, you’ll learn how to connect HTML, CSS, and JavaScript to create a simple, interactive webpage.</p>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }<br> greetMe("World");</code>
+      </section>
+
+      <section class='main-section' id='Variables'>
+        <header>Variables</header>
+        <p>You can declare a variable in three ways:</p>
+        <code>var x = 42.</code>
+        <p>This syntax can be used to declare both local and global variables.</p>
+        <br>
+        <p>By simply assigning it a value. For example,</p>
+        <code>x = 42</code>
+        <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+        <br>
+        <p>With the keyword let. For example,</p>
+        <code>let y = 13.</code>
+
+
+      </section>
+
+      <section class='main-section' id='If_&_Elif_&_Else'>
+        <header>If & Elif & Else</header>
+        <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+        <code>if (condition) { statement_1; } else { statement_2; }</code>
+        <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
+        <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
+        <code>if (condition_1) { statement_1; } else if (condition_2) { 
+            <br>
+            statement_2; } else if (condition_n) { statement_n; }
+            <br>
+            else { statement_last; }</code>
+      <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
+       <code>if (condition) { statement_1_runs_if_condition_is_true;
+            <br>
+            statement_2_runs_if_condition_is_true; } else {
+            <br>
+            statement_3_runs_if_condition_is_false;
+            <br>
+        statement_4_runs_if_condition_is_false; }
+        </code>
+        <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
+        <code>if (x = y) { /* statements here */ }</code>
+        <p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
+        <code>if ((x = y)) { /* statements here */ }</code>
+    </section>
+    
+
+      <section class='main-section' id='Basic_Data_Types'>
+        <header>Basic Data Types</header>
+        <p>The latest ECMAScript standard defines seven data types:</p>
+            <ul>
+                <li>Six data types that are primitives:</li>
+                <ul>
+                    <li>Boolean. true and false.</li>
+                    <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                    <li>undefined. A top-level property whose value is undefined.</li>
+                    <li>Number. 42 or 3.14159.</li>
+                    <li>String. "Howdy"</li>
+                    <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                </ul>
+                <li>and Object</li>
+            </ul>
+      </section>
+
+      <section class='main-section' id='Data_Structures'>
+        <header>Data Structures</header>
+        <p>Data structures in JavaScript are essential for organizing and managing data efficiently. They enable developers to store, retrieve, and manipulate information in ways that make programs faster and easier to maintain. Common structures include arrays, objects, maps, and sets, each serving a specific purpose in handling data.</p>
+        <p>For example, arrays are used to store ordered lists of values:</p>
+        <code>let fruits = ["apple", "banana", "cherry"];<br>console.log(fruits[1]); // Output: banana</code>
+        <p>Objects, on the other hand, store data as key–value pairs, allowing quick access using property names:</p>
+        <code>let person = { name: "Alice", age: 25, city: "London" };<br>console.log(person.name); // Output: Alice</code>
+        <p>These fundamental structures form the foundation for more advanced data handling techniques in JavaScript applications.</p>
+      </section>
+
+
+      <section class='main-section' id='While_Statements'>
+        <header>While Statements</header>
+        <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+        <code>while (condition) statement</code>
+        <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
+        <p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If it returns false, execution stops and control is passed to the statement following while.</p>
+        <p>To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
+        <code>while (condition) { statement_1; <br> statement_2; <br> ... <br> statement_n; }</code>
+        <p>In the example above, as long as condition evaluates to true, the loop will execute the statements block. When condition evaluates to false, the loop will stop executing and control will pass to the statement following the while</p>
+
+      </section>
+
+      <section class='main-section' id='Unit_Testing'>
+        <header>Unit Testing</header>
+        <p>Unit testing is a software testing technique where individual units or components of a program are tested in isolation to ensure they function correctly. In JavaScript, unit tests are typically written using testing frameworks like Jest, Mocha, or Jasmine. These frameworks provide tools to define test cases, set up test environments, and assert expected outcomes.<br><br>Unit tests help identify bugs early in the development process, improve code quality, and facilitate refactoring by ensuring that changes do not break existing functionality. A well-structured unit test suite can serve as documentation for the codebase, making it easier for developers to understand the intended behavior of different components.</p>
+        <code>function add(a, b) { return a + b; }<br>
+        test('adds 1 + 2 to equal 3', () => {<br>
+          expect(add(1, 2)).toBe(3);<br>
+        });</code>
+        <p>In this example, a simple add function is tested to ensure it returns the correct sum. The test case checks that adding 1 and 2 results in 3, providing confidence that the add function behaves as expected.</p>
+      </section>
+
+      <section class='main-section' id='Scope'>
+        <header>Scope</header>
+        <p>In JavaScript, scope refers to the accessibility of variables and functions in different parts of the code. There are two main types of scope: global scope and local scope. Variables declared outside of any function or block have global scope, meaning they can be accessed from anywhere in the code. Conversely, variables declared within a function or block have local scope, restricting their accessibility to that specific context.<br><br>JavaScript also supports block scope through the use of the let and const keywords, which allow variables to be confined to the block in which they are defined (e.g., within loops or conditional statements). Understanding scope is crucial for managing variable lifetimes, avoiding naming conflicts, and ensuring that data is encapsulated appropriately within functions or modules.</p>
+        <code>function example() {<br>
+          let localVar = "I'm local";<br>
+          console.log(localVar); // Accessible here<br>
+        }<br>
+        console.log(localVar); // Error: localVar is not defined</code>
+        <p>In this example, localVar is defined within the example function and is only accessible inside that function. Attempting to access it outside the function results in an error, demonstrating the concept of local scope.</p>
+      </section>
+    </main>
+    
+  </body>
+</html> 

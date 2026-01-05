@@ -1,0 +1,162 @@
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li{
+  list-style: none;
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-right: 3px solid grey;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  position: relative;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+    width: 300px;
+  height: 40px;
+}
+
+.nav ul li.title {
+  font-size: 40px !important;
+  height: 60px !important;
+  border-right: 3px solid grey !important;
+}
+
+.nav ul li.space {
+  height: 300px !important;
+  border-right: 3px solid grey !important;
+  border-bottom: none !important;
+  cursor: auto !important;
+}
+
+
+main {
+  margin-left: 320px; /* leaves space for the fixed nav */
+  margin-top: -75px;
+  padding: 50px;
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+main section header {
+  font-size: 40px;
+  font-weight: normal;
+  padding-top: 50px;
+}
+
+main section p,
+main section header {
+  max-width: 1000px;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.nav ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.title {
+    background-color: white !important;
+}
+
+code {
+  display: block;
+  width: 95%;
+  min-height: 50px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  padding: 20px 20px;
+  font-family: Consolas, monospace;
+  font-size: 18px;
+  color: #333;
+  overflow-x: auto;
+}
+
+.dont-show {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav ul li.title {
+       display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        position: fixed;
+        font-size: 40px;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 2px solid black;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+        background-color: white;
+    }
+
+    .nav {
+        height: 350px;
+        width: 100%;
+        padding-top: 75px;
+        position: relative;
+        overflow-y: scroll;
+    }
+
+    .space {
+        display: none !important;
+    }
+
+    .nav ul li {
+        width: 100% !important;
+        border-right: none !important;
+    }
+
+    main {
+        margin-left: 0px !important
+    }
+
+    code {
+        width: 95% !important;
+        font-size: 14px !important;
+    }
+}
+
+#Basic_Data_Types {
+    line-height: 40px;
+}
